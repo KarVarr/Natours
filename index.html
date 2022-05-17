@@ -20,7 +20,10 @@
     <!-- BURGER MENU -->
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" title="#">
-      <labal class="navigation__button" for="navi-toggle">MENU</labal>
+      <label class="navigation__button" for="navi-toggle">
+        <span class="navigation__icon"></span>
+      </label>
+
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
@@ -49,7 +52,7 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
 
@@ -142,7 +145,7 @@
 
       <!-- TOURS -->
       
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
           Most popular tours
@@ -177,7 +180,7 @@
                       <p class="card__price-only">Only</p>
                       <p class="card__price-value">$299</p>
                     </div>
-                    <a href="#" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -212,7 +215,7 @@
                       <p class="card__price-only">Only</p>
                       <p class="card__price-value">$499</p>
                     </div>
-                    <a href="#" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -247,7 +250,7 @@
                       <p class="card__price-only">Only</p>
                       <p class="card__price-value">$899</p>
                     </div>
-                    <a href="#" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -389,12 +392,32 @@
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by  <a href="#" class="footer__link">Karen Vardanian</a> on Jonas Schmedtmann online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.  Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+            Made by  <a href="https://github.com/KarVarr" class="footer__link" target="_blank" rel="noopener">Karen Vardanian</a> on Jonas Schmedtmann online course <a href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer__link" target="_blank" rel="noopener">Advanced CSS and Sass</a>.  Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
           </p>
         </div>
 
       </div>
     </footer>
+
+
+
+    <!-- POPUP -->
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms  before booking</h3>
+          <p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste explicabo dolores molestiae illo? A quis facere minima similique molestias inventore, animi beatae excepturi repellendus neque  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus dolore sed, laborum consequuntur sapiente labore officiis, inventore fuga numquam omnis placeat ipsam nesciunt, et tempore assumenda debitis praesentium est.</p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
 
 <!-- 
     <section class="grid-test">
