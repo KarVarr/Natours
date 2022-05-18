@@ -2,6 +2,7 @@
     &__group:not(last-child)
         margin-bottom: 2rem
         
+        
 
     &__input
         font-size: $default-font-size
@@ -15,6 +16,10 @@
         width: 90%
         display: block
         transition: all .3s
+        @include respond(tablet)
+            width: 100%
+            
+            
 
         &::placeholder
             color: $color-grey-dark-2
@@ -46,16 +51,20 @@
     &__radio-group
         width: 49%
         display: inline-block
-        
+        @include respond(tablet)
+            width: 100%
+            margin-bottom: 2rem
 
     &__radio-input
         display: none 
+        
 
     &__radio-label
         font-size: $default-font-size
         cursor: pointer
         position: relative
         padding-left: 4rem
+        
         
 
     &__radio-button

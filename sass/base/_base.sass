@@ -2,13 +2,28 @@
 *::after,
 *::before
     padding: 0
-    margin: 0
+    margin: 0 auto
     box-sizing: inherit
 
 html
     // 62.5% == 1rem == 10px  !!!
     font-size: 62.5%
 
-body
+ 
+
+    @include respond(tabletLand)
+        font-size: 56.25%  //1 rem = 9px, 9/16 = 56.25%  1200px
+
+    @include respond(tablet)
+        font-size: 50%  //1 rem = 8px, 8/16 = 50%  900px
+
+    @include respond(bigDesktop)
+        font-size: 75%     // 1rem = 12px, 12/16 = 75%
     
+
+body
     box-sizing: border-box
+    padding: 3rem
+    
+    @include respond(tablet)
+        padding: 0
