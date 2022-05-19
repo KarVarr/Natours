@@ -53,14 +53,16 @@
     &__text 
         font-size: 1.4rem
         margin-bottom: 4rem
-
         column-count: 2
         column-gap: 4rem
         column-rule: 1px solid $color-grey-light-2
         -moz-hyphens: auto
         -webkit-hyphens: auto
         hyphens: auto
-
+        @include respond(phone)
+            font-size: 1.2rem
+            margin-bottom: 2rem
+            column-gap: 2rem
 
     &__close
         &:link,
